@@ -9,23 +9,15 @@ a {
     color: inherit;
 }
 
-button {
-    cursor: pointer;
-}
-
-img {
-    display: block;
-}
-
 body {
     font-family: "Roboto",
         sans-serif;
     color: #2e2f42;
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
 /* ============/Common styles================ */
-
+/* =========== Page Header styles =========== */
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -71,3 +63,102 @@ body {
 .address-link:focus {
     color: #404BBF;
 }
+/* =========== /Page Header styles =========== */
+/* =========== Hero Section styles =========== */
+.hero {background: #2e2f42;}
+
+.main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #ffffff;}
+
+.order-btn {font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+cursor: pointer;
+background-color: #4d5ae5;
+text-align: center;}
+
+.order-btn:hover, .order-btn:focus {background-color: #404BBF;}
+
+/* =========== /Hero Section styles =========== */
+/* =========== Benefits Section styles =========== */
+
+.benefits-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    }
+
+.benefits-list-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;}
+/* =========== /Benefits Section styles =========== */
+/* =========== Our team Section styles =========== */
+.team {background-color: #f4f4fd;}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;}
+
+.team-list-item {background-color: #ffffff;}
+
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;}
+
+.team-profession {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;}
+/* ================= /Our team Section styles =========== */
+/* =================Our Portfolio Section styles===========*/
+
+.portfolio-service {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    }
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;}
+/* =================/Our Portfolio Section styles===========*/
+/* =================Footer styles========================== */
+.page-footer {background-color: #2e2f42;}
+
+.logo-footer {font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;}
+
+.logo-footer-part {color: #f4f4fd;}
+
+.page-footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;}
+/* =================/Footer styles========================== */
