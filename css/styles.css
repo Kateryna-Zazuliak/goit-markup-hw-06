@@ -1,21 +1,27 @@
 /* ==============Common styles============= */
+h1, h2, h3 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
 ul,
 ol {
+margin: 0;
+padding-left: 0;
     list-style-type: none;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 body {
     font-family: "Roboto",
         sans-serif;
     color: #434455;
     background-color: #ffffff;
 }
-
+img {display: block;}
 /* ============/Common styles================ */
 /* =========== Page Header styles =========== */
 .logo {
@@ -145,7 +151,9 @@ color: #2e2f42;}
     }
 /* =================/Our Portfolio Section styles===========*/
 /* =================Footer styles========================== */
-.page-footer {background-color: #2e2f42;}
+.page-footer {background-color: #2e2f42;
+display: flex;
+align-items: center;}
 
 .logo-footer {font-family: "Raleway", sans-serif;
     font-size: 18px;
