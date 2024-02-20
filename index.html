@@ -20,7 +20,7 @@
 
 <body>
   <header class="page-header">
-    <div class="container">
+    <div class="container page-header-container">
     <nav class="page-nav">
       <a class="logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
       <ul class="menu">
@@ -28,16 +28,16 @@
           <a class="menu-link" href="./index.html">Studio</a>
         </li>
         <li>
-          <a class="menu-link" href="">Portfolio</a>
+          <a class="menu-link" href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a class="menu-link" href="">Contacts</a>
+          <a class="menu-link" href="#address">Contacts</a>
         </li>
       </ul>
     </nav>
 
-    <address class="address">
-      <ul>
+    <address class="address" id="address">
+      <ul class="address-item">
         <li>
           <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -46,22 +46,23 @@
         </li>
       </ul>
     </address>
-    </div>
+  </div>
+</div>
   </header>
 
   <main>
     <!-------------------Hero Section -------------------->
     <section class="hero">
-      <div class="container">
+      <div class="container hero-container">
       <h1 class="main-title">Effective Solutions for Your Business</h1>
       <button class="order-btn" type="button">Order Service</button>
     </div>
   </section>
 <!-------------------Our benefits section-------------->
-    <section class="benefits">
+    <section class="benefits section-paddings">
       <div class="container">
-        <h2>Our benefits</h2>
-      <ul>
+        <h2 class="visually-hidden">Our benefits</h2>
+      <ul class="benefits-list">
         <li class="benefits-list-item">
           <h3 class="benefits-list-title">Strategy</h3>
           <p class="benefits-list-text">
@@ -69,21 +70,21 @@
             perfect and creative solution.
           </p>
         </li>
-        <li>
+        <li class="benefits-list-item">
           <h3 class="benefits-list-title">Punctuality</h3>
           <p class="benefits-list-text">
             Bring the key message to the brand's audience for the best price
             within the shortest possible time.
           </p>
         </li>
-        <li>
+        <li class="benefits-list-item">
           <h3 class="benefits-list-title">Diligence</h3>
           <p class="benefits-list-text">
             Research and confirm brands that present the strongest digital
             growth opportunities and minimize risk.
           </p>
         </li>
-        <li>
+        <li class="benefits-list-item">
           <h3 class="benefits-list-title">Technologies</h3>
           <p class="benefits-list-text">
             Design practice focused on digital experiences. We bring forth a
@@ -94,7 +95,7 @@
       </div>
     </section>
 <!----------------- Our team Section --------------------------------------->
-    <section class="team">
+    <section class="team section-paddings">
       <div class="container">
       <h2 class="section-title">Our Team</h2>
       <ul class="team-list">
@@ -130,7 +131,7 @@
       </div>
     </section>
     <!--------------------------- Our Portfolio Section -------------------------->
-    <section class="our-portfolio">
+    <section class="our-portfolio section-paddings" id="portfolio">
       <div class="container">
       <h2 class="section-title">Our Portfolio</h2>
       <ul class="portfolio-list">
