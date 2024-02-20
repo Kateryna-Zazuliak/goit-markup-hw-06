@@ -41,11 +41,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .page-header-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
 .page-nav {
   display: flex;
@@ -71,7 +72,7 @@ img {
 }
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .menu-link {
   color: #2e2f42;
@@ -98,7 +99,7 @@ img {
 }
 .address-item {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .address-link {
   font-size: 16px;
@@ -117,12 +118,9 @@ img {
 /* =========== Hero Section styles =========== */
 .hero {
   background: #2e2f42;
-}
-.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
 }
-
 .main-title {
   max-width: 496px;
   font-size: 56px;
@@ -219,9 +217,10 @@ img {
 .team-list-item {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
-.team-photo {
-  margin-bottom: 32px;
+.team-info {
+  margin: 32px 0;
 }
 .team-name {
   font-weight: 500;
@@ -238,7 +237,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 32px;
 }
 /* ================= /Our team Section styles =========== */
 /* =================Our Portfolio Section styles===========*/
@@ -250,7 +248,11 @@ img {
 }
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
-  border-bottom: 1px solid #e7e9fc;
+}
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-service {
   font-weight: 500;
@@ -258,17 +260,12 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
-  margin-bottom: 8px;
-  margin-left: 16px;
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
-  margin-left: 16px;
 }
 /* =================/Our Portfolio Section styles===========*/
 /* =================Footer styles========================== */
@@ -288,6 +285,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-footer-part {
