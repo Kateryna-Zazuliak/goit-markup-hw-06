@@ -43,7 +43,7 @@ img {
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header-container {
@@ -274,7 +274,7 @@ img {
 
 .team-info {
   padding-top: 32px;
-  padding-bottom: 8px;
+  padding-bottom: 32px;
 }
 .team-name {
   font-weight: 500;
@@ -291,9 +291,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-}
-.team-social {
-  padding-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 .team-social-list {
@@ -461,8 +459,8 @@ img {
   fill: #f4f4fd;
 }
 
-.footer-social-item:hover .footer-social-icon,
-.footer-social-item:focus .footer-social-icon {
+.footer-social-icon:hover,
+.footer-social-icon:focus {
   background-color: #31d0aa;
 }
 /* =================/Footer styles========================== */
