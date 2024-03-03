@@ -610,17 +610,14 @@
         <div class="footer-form">
           <p class="footer-form-text">Subscribe</p>
           <form class="footer-form-message">
-            <label
-              for="subscribe-email"
-              class="footer-form-label visually-hidden"
-            ></label>
-            <input
-              class="footer-form-input"
-              type="email"
-              name="subscribe-email"
-              id="subscribe-email"
-              placeholder="E-mail"
-            />
+            <label for="subscribe-email" class="footer-form-label">
+              <input
+                class="footer-form-input"
+                type="email"
+                name="subscribe-email"
+                id="subscribe-email"
+                placeholder="E-mail"
+            /></label>
             <button class="footer-form-btn" type="submit">
               Subscribe
               <svg
@@ -637,7 +634,7 @@
       </div>
     </footer>
     <!-- Backdrop -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
@@ -711,12 +708,12 @@
             <input
               type="checkbox"
               class="modal-privacy-checkbox visually-hidden"
-              id="privacy-policy"
-              name="privacy-policy"
+              id="user-privacy"
+              name="user-privacy"
               value="true"
               required
             />
-            <label for="privacy-policy" class="modal-checkbox-label">
+            <label for="user-privacy" class="modal-checkbox-label">
               <span class="modal-own-checkbox">
                 <svg class="modal-own-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkmark"></use>
