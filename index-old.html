@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
     <!-- Google Fonts Links -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <!-- Modern Normalize Link -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <!-- Own styles link -->
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -58,120 +58,22 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="open-menu-btn">
-          <svg
-            class="open-menu-icon"
-            width="24"
-            height="24"
-            aria-label="mobil menu open button"
-          >
-            <use href="./images/icons.svg#icon-menu-close"></use>
-          </svg>
-        </button>
       </div>
     </header>
-    <div class="mobile-menu">
-      <div class="container mobile-menu-container">
-        <button type="button" class="mobile-menu-close-btn">
-          <svg class="mobile-menu-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu-list">
-          <li class="mobile-menu-item">
-            <a
-              class="mobile-menu-link mobile-menu-link-active"
-              href="./index.html"
-              >Studio</a
-            >
-          </li>
-          <li>
-            <a class="mobile-menu-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link" href="#address">Contacts</a>
-          </li>
-        </ul>
-        <address class="mobile-address" id="address">
-          <ul class="mobile-address-list">
-            <li class="mobile-address-item">
-              <a class="mobile-address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="mobile-address-item">
-              <a class="mobile-address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
-        <ul class="mobile-social-list">
-          <li class="mobile-social-item">
-            <a class="mobile-social-link" href="#">
-              <svg
-                class="mobile-social-icon"
-                aria-label="instagram icon"
-                width="24"
-                height="24"
-              >
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-social-item">
-            <a class="mobile-social-link" href="#">
-              <svg
-                class="mobile-social-icon"
-                aria-label="twitter icon"
-                width="24"
-                height="24"
-              >
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-social-item">
-            <a class="mobile-social-link" href="#">
-              <svg
-                class="mobile-social-icon"
-                aria-label="facebook icon"
-                width="24"
-                height="24"
-              >
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-social-item">
-            <a class="mobile-social-link" href="#">
-              <svg
-                class="mobile-social-icon"
-                aria-label="linkedin icon"
-                width="24"
-                height="24"
-              >
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
 
-    <!-- <main> -->
-    <!-- Hero Section -->
+    <main>
+      <!-- Hero Section -->
 
-    <section class="hero">
-      <div class="container hero-container">
-        <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button class="order-btn" type="button">Order Service</button>
-      </div>
-    </section>
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="main-title">Effective Solutions for Your Business</h1>
+          <button class="order-btn" type="button">Order Service</button>
+        </div>
+      </section>
 
-    <!-- Our benefits section -->
+      <!-- Our benefits section -->
 
-    <!-- <section class="benefits section-paddings">
+      <section class="benefits section-paddings">
         <div class="container">
           <h2 class="visually-hidden">Our benefits</h2>
           <ul class="benefits-list">
@@ -179,9 +81,9 @@
               <div class="benefits-list-icon">
                 <svg
                   class="benefits-icon"
-                  aria-label="antenna icon"
                   width="64"
                   height="64"
+                  aria-label="antenna icon"
                 >
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -196,9 +98,9 @@
               <div class="benefits-list-icon">
                 <svg
                   class="benefits-icon"
-                  aria-label="clock icon"
                   width="64"
                   height="64"
+                  aria-label="clock icon"
                 >
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -213,9 +115,9 @@
               <div class="benefits-list-icon">
                 <svg
                   class="benefits-icon"
-                  aria-label="diagram icon"
                   width="64"
                   height="64"
+                  aria-label="diagram icon"
                 >
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -230,9 +132,9 @@
               <div class="benefits-list-icon">
                 <svg
                   class="benefits-icon"
-                  aria-label="astronaut icon"
                   width="64"
                   height="64"
+                  aria-label="astronaut icon"
                 >
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -245,11 +147,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- Our team Section -->
+      <!-- Our team Section -->
 
-    <!-- <section class="team section-paddings">
+      <section class="team section-paddings">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
@@ -269,9 +171,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="instagram icon"
                         width="16"
                         height="16"
+                        aria-label="instagram icon"
                       >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -281,9 +183,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="twitter icon"
                         width="16"
                         height="16"
+                        aria-label="twitter icon"
                       >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -293,9 +195,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="facebook icon"
                         width="16"
                         height="16"
+                        aria-label="facebook icon"
                       >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -305,9 +207,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="linkedin icon"
                         width="16"
                         height="16"
+                        aria-label="linkedin icon"
                       >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -332,9 +234,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="instagram icon"
                         width="16"
                         height="16"
+                        aria-label="instagram icon"
                       >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -344,9 +246,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="twitter icon"
                         width="16"
                         height="16"
+                        aria-label="twitter icon"
                       >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -356,9 +258,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="facebook icon"
                         width="16"
                         height="16"
+                        aria-label="facebook icon"
                       >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -368,9 +270,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="linkedin icon"
                         width="16"
                         height="16"
+                        aria-label="linkedin icon"
                       >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -395,9 +297,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="instagram icon"
                         width="16"
                         height="16"
+                        aria-label="instagram icon"
                       >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -407,9 +309,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="twitter icon"
                         width="16"
                         height="16"
+                        aria-label="twitter icon"
                       >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -419,9 +321,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="facebook icon"
                         width="16"
                         height="16"
+                        aria-label="facebook icon"
                       >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -431,9 +333,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="linkedin icon"
                         width="16"
                         height="16"
+                        aria-label="linkedin icon"
                       >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -458,9 +360,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="instagram icon"
                         width="16"
                         height="16"
+                        aria-label="instagram icon"
                       >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -470,9 +372,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="twitter icon"
                         width="16"
                         height="16"
+                        aria-label="twitter icon"
                       >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -482,9 +384,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="facebook icon"
                         width="16"
                         height="16"
+                        aria-label="facebook icon"
                       >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -494,9 +396,9 @@
                     <a class="team-social-link" href="#">
                       <svg
                         class="social-list-icon"
-                        aria-label="linkedin icon"
                         width="16"
                         height="16"
+                        aria-label="linkedin icon"
                       >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -507,11 +409,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- Our Portfolio Section -->
+      <!-- Our Portfolio Section -->
 
-    <!-- <section class="our-portfolio section-paddings" id="portfolio">
+      <section class="our-portfolio section-paddings" id="portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -637,11 +539,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- </main> -->
+      </section>
+    </main>
 
     <!-- Footer Section -->
-    <!--<footer class="page-footer">
+    <footer class="page-footer">
       <div class="container footer-container">
         <div class="page-footer-logo">
           <a class="logo-footer" href="./index.html"
@@ -659,9 +561,9 @@
               <a class="footer-social-icon" href="#">
                 <svg
                   class="footer-list-icon"
-                  aria-label="instagram icon"
                   width="24"
                   height="24"
+                  aria-label="instagram icon"
                 >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
@@ -671,9 +573,9 @@
               <a class="footer-social-icon" href="#">
                 <svg
                   class="footer-list-icon"
-                  aria-label="twitter icon"
                   width="24"
                   height="24"
+                  aria-label="twitter icon"
                 >
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
@@ -683,9 +585,9 @@
               <a class="footer-social-icon" href="#">
                 <svg
                   class="footer-list-icon"
-                  aria-label="facebook icon"
                   width="24"
                   height="24"
+                  aria-label="facebook icon"
                 >
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
@@ -695,9 +597,9 @@
               <a class="footer-social-icon" href="#">
                 <svg
                   class="footer-list-icon"
-                  aria-label="linkedin icon"
                   width="24"
                   height="24"
+                  aria-label="linkedin icon"
                 >
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -708,21 +610,21 @@
         <div class="footer-form">
           <p class="footer-form-text">Subscribe</p>
           <form class="footer-form-message">
-            <label class="footer-form-label" for="subscribe-email">
+            <label for="subscribe-email" class="footer-form-label">
               <input
                 class="footer-form-input"
-                id="subscribe-email"
-                name="subscribe-email"
                 type="email"
+                name="subscribe-email"
+                id="subscribe-email"
                 placeholder="E-mail"
             /></label>
             <button class="footer-form-btn" type="submit">
               Subscribe
               <svg
                 class="footer-form-btn-icon"
-                aria-label="plane icon"
                 width="24"
                 height="24"
+                aria-label="plane icon"
               >
                 <use href="./images/icons.svg#icon-plane"></use>
               </svg>
@@ -730,16 +632,16 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Backdrop -->
-    <!-- <div class="backdrop is-open">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
             class="modal-close-btn-icon"
-            aria-label="close icon"
             width="8"
             height="8"
+            aria-label="close icon"
           >
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -749,13 +651,13 @@
         </p>
         <form class="modal-form">
           <div class="modal-form-field-wrapper">
-            <label class="modal-label" for="user-name">Name</label>
+            <label for="user-name" class="modal-label">Name</label>
             <div class="modal-input">
               <input
-                class="modal-form-input"
-                id="user-name"
-                name="user-name"
                 type="text"
+                class="modal-form-input"
+                name="user-name"
+                id="user-name"
                 required
               />
               <svg class="modal-form-icon" width="18" height="24">
@@ -764,13 +666,13 @@
             </div>
           </div>
           <div class="modal-form-field-wrapper">
-            <label class="modal-label" for="user-phone"> Phone </label>
+            <label for="user-phone" class="modal-label"> Phone </label>
             <div class="modal-input">
               <input
-                class="modal-form-input"
-                id="user-phone"
-                name="user-phone"
                 type="tel"
+                class="modal-form-input"
+                name="user-phone"
+                id="user-phone"
                 required
               />
               <svg class="modal-form-icon" width="18" height="24">
@@ -779,13 +681,13 @@
             </div>
           </div>
           <div class="modal-form-field-wrapper">
-            <label class="modal-label" for="user-email"> Email </label>
+            <label for="user-email" class="modal-label"> Email </label>
             <div class="modal-input">
               <input
-                class="modal-form-input"
-                id="user-email"
-                name="user-email"
                 type="email"
+                class="modal-form-input"
+                name="user-email"
+                id="user-email"
                 required
               />
               <svg class="modal-form-icon" width="18" height="24">
@@ -794,36 +696,36 @@
             </div>
           </div>
           <div class="modal-form-field-comment">
-            <label class="modal-label" for="user-comment"> Comment </label>
+            <label for="user-comment" class="modal-label"> Comment </label>
             <textarea
               class="modal-form-message"
-              id="user-comment"
               name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="modal-checkbox">
             <input
+              type="checkbox"
               class="modal-privacy-checkbox visually-hidden"
               id="user-privacy"
               name="user-privacy"
-              type="checkbox"
               value="true"
               required
             />
-            <label class="modal-checkbox-label" for="user-privacy">
+            <label for="user-privacy" class="modal-checkbox-label">
               <span class="modal-own-checkbox">
                 <svg class="modal-own-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="privacy-policy-link" href>Privacy Policy</a>
+              <a class="privacy-policy-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
-      </div> -->
-    <!-- </div> -->
+      </div>
+    </div>
   </body>
 </html>
