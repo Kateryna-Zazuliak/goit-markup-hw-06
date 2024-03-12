@@ -320,29 +320,49 @@ img {
 }
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .hero {
-    background-image: url('../images/mobile/people_m@2x.jpg');
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/mobile/people_m@2x.jpg');
   }
 }
 @media only screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: url('../images/tablet/people_office_t.jpg');
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/tablet/people_office_t.jpg');
   }
 }
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
   .hero {
-    background-image: url('../images/tablet/people_office_t@2x.jpg');
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/tablet/people_office_t@2x.jpg');
   }
 }
 @media only screen and (min-width: 1158px) {
   .hero {
     max-width: 1158px;
-    background-image: url('../images/main/people-office.jpg');
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/main/people-office.jpg');
   }
 }
 @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
   .hero {
-    background-image: url('../images/main/people-office@2x.jpg');
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/main/people-office@2x.jpg');
   }
 }
 
