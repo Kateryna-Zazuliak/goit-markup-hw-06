@@ -59,6 +59,13 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+@media only screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .page-header-container {
   display: flex;
   justify-content: space-between;
@@ -195,14 +202,21 @@ img {
   top: 0;
   left: 0;
   z-index: 9999;
-  width: 100%;
-  height: 100%;
   background-color: #ffffff;
   opacity: 0;
   visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-container {
+  display: block;
   position: relative;
+  width: 100%;
+  padding-top: 72px;
 }
 .mobile-menu-close-btn {
   position: absolute;
@@ -228,8 +242,10 @@ img {
   pointer-events: auto;
 }
 .mobile-menu-list {
-  padding-top: 72px;
-  padding-bottom: 168px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: auto;
   gap: 40px;
 }
 .mobile-menu-link {
@@ -239,7 +255,6 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-link:hover,
@@ -255,6 +270,9 @@ img {
   position: relative;
   color: #404bbf;
 }
+.mobile-contacts {
+  margin-top: auto;
+}
 .mobile-address {
   font-style: normal;
   display: block;
@@ -262,8 +280,10 @@ img {
 }
 .mobile-address-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 24px;
+  padding: 0;
+  margin-bottom: auto;
 }
 .mobile-address-link {
   font-weight: 500;
@@ -272,6 +292,9 @@ img {
   letter-spacing: 0.02em;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-tel {
+  color: #4d5ae5;
 }
 
 .mobile-address-link:hover,
@@ -336,6 +359,8 @@ img {
 @media only screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -354,7 +379,9 @@ img {
 }
 @media only screen and (min-width: 1158px) {
   .hero {
-    max-width: 1158px;
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -595,6 +622,11 @@ img {
   background-color: #404bbf;
 }
 @media only screen and (min-width: 768px) {
+  .team .container {
+    max-width: 584px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .team-list {
     column-gap: 24px;
     row-gap: 64px;
@@ -604,6 +636,10 @@ img {
   }
 }
 @media only screen and (min-width: 1158px) {
+  .team .container {
+    max-width: 1158px;
+  }
+
   .team-list {
     row-gap: 0;
   }
@@ -717,11 +753,10 @@ img {
 }
 .page-footer-logo {
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 72px;
 }
 .logo-footer {
   display: inline-block;
-  margin-bottom: 16px;
   color: #4d5ae5;
   font-weight: 700;
   font-size: 18px;
@@ -729,6 +764,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .logo-footer-part {
@@ -742,23 +778,23 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: justify;
+}
+.footer-social {
   margin-bottom: 72px;
 }
-
 .footer-social-text {
-  margin-bottom: 16px;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 16px;
 }
 .footer-social-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-social-item {
@@ -848,7 +884,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: start;
-    margin-left: 108px;
+    max-width: 584px;
   }
   .page-footer-logo {
     text-align: start;
@@ -876,16 +912,22 @@ img {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
   .footer-container {
+    max-width: 1158px;
     flex-wrap: nowrap;
     align-items: baseline;
     margin: 0 auto;
   }
   .page-footer-logo {
     margin-right: 120px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
   .footer-social {
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 /* =================/Footer styles========================== */
@@ -1103,8 +1145,6 @@ img {
 }
 @media only screen and (max-width: 768px) {
   .modal {
-    top: 0;
-    left: 0;
     width: 288px;
     min-height: 623px;
     padding-right: 16px;
